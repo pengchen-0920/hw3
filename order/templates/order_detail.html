@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Order Detail for order {{order.orderId}}</title>
+    </head>
+    <body>
+        <div class="order_detail">
+            <table>
+                <tr>
+                    <th colspan="2">Order</th>
+                </tr>
+                <tr>
+                  <th>ID</th>
+                  <th>{{order.orderId}}</th>
+                </tr>
+
+                <tr>
+                  <td>customer</td>
+                  <td>{{order.customer}}</td>
+                </tr>
+
+                <tr>
+                  <td>items</td>
+                  <td>{{order.items}}</td>
+                </tr>
+
+
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "http://127.0.0.1:8000/saml/metadata/",
+        "assertionConsumerService": {
+            "url": "http://127.0.0.1:8000/order",
+            "binding": "urn:oasis:names:tc:SAML: 2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "http://127.0.0.1:8000/saml/sls",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "",
+        "privateKey": ""
+    },
+    "idp": {
+        "entityId": "http://sso.sdm.im.ntu.edu.tw/saml2/idp/metadata.php",
+        "singleSignOnService": {
+            "url": "http://sso.sdm.im.ntu.edu.tw/saml2/idp/SSOService.php",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "singleLogoutService": {
+            "url": "http://sso.sdm.im.ntu.edu.tw/saml2/idp/SingleLogoutService.php",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "MIIEAzCCAuugAwIBAgIJAIDHA9QoK1uLMA0GCSqGSIb3DQEBCwUAMIGXMQswCQYDVQQGEwJ0dzEPMA0GA1UECAwGdGFpd2FuMQ8wDQYDVQQHDAZ0YWlwZWkxIzAhBgNVBAoMGk5hdGlvbmFsIFRhaXdhbiBVbml2ZXJzaXR5MSUwIwYDVQQLDBxJbmZvcm1hdGlvbiBNYW5hZ2VtZW50IERlcHQuMRowGAYDVQQDDBFzZG0uaW0ubnR1LmVkdS50dzAeFw0xNTEyMDEyMzI4MzZaFw0yNTExMzAyMzI4MzZaMIGXMQswCQYDVQQGEwJ0dzEPMA0GA1UECAwGdGFpd2FuMQ8wDQYDVQQHDAZ0YWlwZWkxIzAhBgNVBAoMGk5hdGlvbmFsIFRhaXdhbiBVbml2ZXJzaXR5MSUwIwYDVQQLDBxJbmZvcm1hdGlvbiBNYW5hZ2VtZW50IERlcHQuMRowGAYDVQQDDBFzZG0uaW0ubnR1LmVkdS50dzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALj0FOPN3nzFUXyE63uXGb5ZH8i55qWXPamrMeKxQOcc+Wn3E/b5GQ7geEgwoC34McAO8NBIXQpfLprIq+x0osE0IEbnDRMEu1gi+Rf9ZgQpZm/5gPN1pNQ1mYiCFkyebIYq8q1itlYu9Kn2M2Iqraoa6yRC48vjIS/NsBJ/5vq/UFgib6m78yAnxPW7IcdUkCnrjAKoKJnbxyJVhYJlo3QTS8VF8fYkse/HU9DpE1FNKJnmOcOhyQDZykjxATQ4wT472+Zk9W1bp2WXsCPN5uMUjN+pKOX1PdQH5TyWKVZ+1zrG3VK5Owupo/gD5TZxAueMcLJAGcYUuW/u8X3g97MCAwEAAaNQME4wHQYDVR0OBBYEFIoL6EqeXA/OqiqAAKE6DrsjAXNhMB8GA1UdIwQYMBaAFIoL6EqeXA/OqiqAAKE6DrsjAXNhMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAHp/Ky/dR3W8x4bYSBTJvlmMRRZbsvSgqeuLs7SYCNZIUju4uyyUkHcWwsYA0aLOD695wr+Ri1zI8Ms3ypUNt0+ZZIfqdQiKwNU4WIK8m19ieIdgo/Iy3m9hKnwxhhWHTCaTQDtOsv4SuVCTOEsM80b0zRyPmGFozaX+lp6hUIJvC7KjHw7H+Q3VnIbgoVOEMN8WfcAHmftYoqg1XzARVvVylKjIjzD3mHIQSab8FI3SttsY3/Nx54BGy07il8Lzd+fK1H0sZR7l3gFbVbDWuMJnw5arT9WwxjYAyPpEFUHuCtziwN7R1U83vJErD0eGvB+lfWmrdQIvq6AVo83/0ZM="
+    }
+}
